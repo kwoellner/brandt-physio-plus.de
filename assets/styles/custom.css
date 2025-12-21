@@ -1,0 +1,694 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/silka-extralight-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-extralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-extralight-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-extralight-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-extralight-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 200;
+    src: url('../fonts/silka-extralightitalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-extralightitalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-extralightitalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-extralightitalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/silka-light-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-light-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-light-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/silka-lightitalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-lightitalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-lightitalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-lightitalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/silka-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-regular-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-regular-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/silka-regularitalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-regularitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-regularitalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-regularitalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-regularitalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/silka-medium-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-medium-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-medium-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/silka-mediumitalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-mediumitalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-mediumitalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-mediumitalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/silka-semibold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-semibold-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-semibold-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/silka-semibolditalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-semibolditalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-semibolditalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-semibolditalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/silka-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-bold-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-bold-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/silka-bolditalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-bolditalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-bolditalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-bolditalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/silka-black-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-black-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-black-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-black-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Silka';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/silka-blackitalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silka-blackitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/silka-blackitalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/silka-blackitalic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/silka-blackitalic-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Silka', sans-serif;
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 300;
+    color: #323c3c;
+}
+
+body {
+    padding-top: 60px;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        padding-top: 120px;
+    }
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 55px;
+}
+
+h1 span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    position: relative;
+    font-size: 35px;
+    line-height: 60px;
+    text-align: center;
+}
+
+h2::before {
+    position: absolute;
+    margin-left: -50px;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    background-color: #5ebf48;
+    content: "";
+}
+
+.btn-primary {
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    padding: 8px 20px;
+    background-color: #5ebf48;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: #4eb140;
+}
+
+.btn-sm {
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 5px 15px;
+}
+
+.bg-light-gray {
+    background-color: #f0f1f1;
+}
+
+.bg-dark-gray {
+    background-color: #434f4f;
+    color: #ffffff;
+}
+
+.list-colored li::marker {
+    color: #5ebf48;
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-wrapper img {
+    position: absolute;
+    inset: 0;
+}
+
+.icon-hover {
+    opacity: 0;
+}
+
+.icon-swap:hover .icon-hover {
+    opacity: 1;
+}
+
+.icon-swap:hover .icon-default {
+    opacity: 0;
+}
+
+@media (min-width: 992px) {
+    .icon-wrapper {
+        position: relative;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .right-aligned {
+        padding-right: calc((100vw - 960px)/2 + 0.75rem);
+    }
+
+    .left-aligned {
+        padding-left: calc((100vw - 960px)/2 + 0.75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .right-aligned {
+        padding-right: calc((100vw - 1140px)/2 + 0.75rem);
+    }
+
+    .left-aligned {
+        padding-left: calc((100vw - 1140px)/2 + 0.75rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .right-aligned {
+        padding-right: calc((100vw - 1320px)/2 + 0.75rem);
+    }
+
+    .left-aligned {
+        padding-left: calc((100vw - 1320px)/2 + 0.75rem);
+    }
+}
+
+.carousel-control-prev {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: 50%;
+    margin-top: -15px;
+    opacity: 1;
+}
+
+.carousel-control-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    top: 50%;
+    margin-top: -15px;
+    opacity: 1;
+}
+
+.carousel-indicators {
+    margin-bottom: -50px;
+}
+
+.carousel:hover .carousel-control-prev {
+    transition: all 3s ease;
+}
+
+.carousel:hover .carousel-control-next {
+    transition: all 3s ease;
+}
+
+.carousel:hover .carousel-control-next-icon {
+    margin-left: -1.25rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    border: 1px solid rgba(67, 79, 79, 0.6);
+    background-color: rgba(67, 79, 79, 0.6);
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target].active {
+    border: 1px solid #5ebf48;
+    background-color: #5ebf48;
+}
+
+@media (min-width: 992px) {
+    .carousel-control-next img,
+    .carousel-control-prev img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carousel-control-prev {
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+        left: -30px;
+    }
+
+    .carousel-control-next {
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+        right: -30px;
+    }
+}
+
+/* Navigation */
+.navbar-toggler {
+    padding-right: 0;
+    border: 0;
+    border-color: transparent;
+}
+
+nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav .offcanvas {
+    background-color: #434f4f;
+}
+
+nav .offcanvas-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.offcanvas-header .btn-close {
+    opacity: 1;
+}
+
+.offcanvas-header .btn-close:focus {
+    box-shadow: none;
+}
+
+
+nav .offcanvas .nav-link {
+    margin-left: 36px;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+nav .offcanvas .nav-link.icon-swap {
+    margin-left: 0;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 992px) {
+    nav .navbar-brand img {
+        height: 40px;
+    }
+
+    nav .nav-link {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    nav .offcanvas .nav-link {
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .navbar-expand-lg .offcanvas .nav-link {
+        margin-left: 1.25rem;
+        padding: 0.25rem 0 0.25rem 0.75rem;
+    }
+
+    nav .offcanvas .nav-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #5ebf48;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .2s ease;
+    }
+
+    nav .offcanvas .nav-link:hover::after,
+    nav .offcanvas .nav-link:focus-visible::after {
+        transform: scaleX(1);
+    }
+}
+
+/* Header */
+#header {
+    background-color: #f0f1f1;
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        max-width: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #header .logo {
+        position: absolute;
+        width: 140px;
+        height: 162px;
+        top: 50%;
+        left: 0;
+        margin-top: -81px !important;
+        margin-left: -70px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #header .logo {
+        position: absolute;
+        width: 250px;
+        height: 288px;
+        top: 50%;
+        left: 0;
+        margin-top: -144px !important;
+        margin-left: -125px !important;
+    }
+}
+
+/* Welcome */
+#welcome p {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/* News */
+#news .alert {
+    padding: 50px;
+}
+
+#news .alert-primary {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    background-color: #ebf7e4;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+}
+
+#news p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.alert-primary img {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+/* Angebote */
+#angebote .card-title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+#angebote a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#angebote a.arrow-hover img {
+    transition: transform .2s ease;
+}
+
+#angebote a.arrow-hover:hover img,
+#angebote a.arrow-hover:focus-visible img {
+    transform: translateX(-20px);
+}
+
+/* Über uns */
+#ueberuns a {
+    color: #323c3c;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#ueberuns a span {
+    display: inline-block;
+    transition: transform .2s ease;
+}
+
+#ueberuns a:hover span,
+#ueberuns a:focus-visible span {
+    transform: translateX(20px);
+}
+
+/* FAQ */
+#faq .accordion-item {
+    border-color: #37393f;
+}
+
+#faq .accordion-item h2:before {
+    display: none;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: inherit;
+}
+
+#faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+
+#faq .accordion-button::after {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icon_plus.svg');
+    background-size: 20px 20px;
+    background-position-x: 0;
+    background-position-y: 0;
+    transition: none;
+}
+
+#faq .accordion-button:hover::after {
+    background-image: url('../images/icon_plus_active.svg');
+}
+
+#faq .accordion-button:not(.collapsed)::after {
+    background-image: url('../images/icon_minus_active.svg');
+}
+
+#faq .accordion-flush>.accordion-item:first-child {
+    border-top: 1px solid #37393f;
+}
+
+#faq .accordion-flush>.accordion-item:last-child {
+    border-bottom: 1px solid #37393f;
+}
+
+#faq .accordion-button {
+    padding-left: 0;
+}
+
+/* Kontakt */
+#kontakt a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#kontakt a.text-uppercase {
+    letter-spacing: 1px;
+}
+
+#kontakt .fs-5 {
+    font-size: 1.125rem !important;
+}
+
+#kontakt .lh-30 {
+    display: inline-block;
+    line-height: 30px !important;
+}
+
+/* Footer */
+footer {
+    height: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #434f4f;
+}
+
+footer p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        height: 90px;
+    }
+}
