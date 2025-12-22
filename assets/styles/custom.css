@@ -231,6 +231,12 @@ h3 {
     font-weight: normal;
 }
 
+h5 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
 em {
     font-weight: 600;
     font-style: normal;
@@ -276,6 +282,10 @@ em {
 .bg-dark-gray {
     background-color: #434f4f;
     color: #ffffff;
+}
+
+.list-colored {
+    padding-left: 1rem;
 }
 
 .list-colored li::marker {
@@ -481,6 +491,26 @@ nav .icon-swap:hover .icon-default {
 .accordion-body {
     font-size: 18px;
     line-height: 28px;
+}
+
+.accordion-body ul {
+    padding-left: 1rem;
+}
+
+.accordion-light .accordion-item {
+    border-color: #a1a7a7;
+}
+
+.accordion-light .accordion-body {
+    border-top: 1px solid #a1a7a7;
+}
+
+.accordion-flush.accordion-light>.accordion-item:first-child {
+    border-top: none;
+}
+
+.accordion-flush.accordion-light>.accordion-item:last-child {
+    border-bottom: none;
 }
 
 /* Navigation */
