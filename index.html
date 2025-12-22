@@ -31,7 +31,7 @@
     <meta name="msapplication-TileImage" content="assets/images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body data-bs-spy="scroll" data-bs-offset="0" data-bs-target=".navbar-collapse" tabindex="0">
+<body>
 
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top d-block py-0" data-bs-theme="dark" style="height: 60px; background-color: #434f4f;">
     <div class="container h-100">
@@ -45,17 +45,17 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body justify-content-lg-end">
-                <div class="navbar-nav navbar-nav-scroll">
+                <div id="navbar-nav-scroll" class="navbar-nav navbar-nav-scroll">
                     <a class="nav-link d-flex d-lg-none align-items-center icon-swap" href="physiotherapie.html"><span class="icon-wrapper me-3"><img src="assets/images/icon_plus_white.svg" width="20" height="20" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="20" height="20" alt=""></span>Physiotherapie</a>
                     <a class="nav-link d-flex d-lg-none align-items-center icon-swap" href="ostheopathische-behandlung.html"><span class="icon-wrapper me-3"><img src="assets/images/icon_plus_white.svg" width="20" height="20" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="20" height="20" alt=""></span>Osteopath. Behandlung</a>
                     <a class="nav-link d-flex d-lg-none align-items-center icon-swap" href="kurse.html"><span class="icon-wrapper me-3"><img src="assets/images/icon_plus_white.svg" width="20" height="20" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="20" height="20" alt=""></span>Kurse</a>
                     <a class="nav-link d-flex d-lg-none align-items-center icon-swap" href="power-plate.html"><span class="icon-wrapper me-3"><img src="assets/images/icon_plus_white.svg" width="20" height="20" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="20" height="20" alt=""></span>Power Plate</a>
                     <a class="nav-link d-flex d-lg-none align-items-center icon-swap mb-5" href="wellness.html"><span class="icon-wrapper me-3"><img src="assets/images/icon_plus_white.svg" width="20" height="20" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="20" height="20" alt=""></span>Wellness</a>
 
-                    <a class="nav-link d-flex" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#ueberuns">Über uns</a>
-                    <a class="nav-link d-flex" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#angebote">Kurszentrum</a>
-                    <a class="nav-link d-flex" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="karriere.html">Karriere</a>
-                    <a class="nav-link d-flex" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#kontakt">Kontakt</a>
+                    <a class="nav-link d-flex" data-bs-dismiss="offcanvas" href="#ueberuns">Über uns</a>
+                    <a class="nav-link d-flex" data-bs-dismiss="offcanvas" href="#angebote">Kurszentrum</a>
+                    <a class="nav-link d-flex" href="karriere.html">Karriere</a>
+                    <a class="nav-link d-flex" data-bs-dismiss="offcanvas" href="#kontakt">Kontakt</a>
                 </div>
                 <div class="d-lg-none d-flex w-100 mt-5 justify-content-center">
                     <a class="btn btn-primary btn-sm w-100" href="tel:+493420236902">Termin</a>
@@ -67,11 +67,11 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-11 d-flex flex-row">
-                    <a href="#" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Physiotherapie</a>
-                    <a href="#" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Osteopathische Behandlung</a>
-                    <a href="#" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Kurse</a>
-                    <a href="#" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Power Plate</a>
-                    <a href="#" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Wellness</a>
+                    <a href="physiotherapie.html" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Physiotherapie</a>
+                    <a href="ostheopathische-behandlung.html" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Osteopathische Behandlung</a>
+                    <a href="kurse.html" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Kurse</a>
+                    <a href="power-plate.html" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Power Plate</a>
+                    <a href="wellness.html" class="nav-link d-flex me-3 me-xl-4 align-items-center icon-swap"><span class="icon-wrapper me-2"><img src="assets/images/icon_plus.svg" width="16" height="16" class="icon-default" alt="Plus"><img src="assets/images/icon_plus_active.svg" class="icon-hover" width="16" height="16" alt=""></span>Wellness</a>
                 </div>
                 <div class="col-12 col-lg-1 text-end"><a href="tel:+493420236902" class="btn btn-primary btn-sm">Termin</a></div>
             </div>
@@ -79,7 +79,7 @@
     </div>
 </nav>
 
-<article>
+<article data-bs-spy="scroll" data-bs-target="#navbar-nav-scroll" data-bs-root-margin="-60px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <section id="header">
         <div class="container-fluid px-0">
             <div class="row g-0 min-h-100 align-items-center">
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section id="welcome">
+    <section id="intro">
         <div class="container my-5">
             <div class="row">
                 <div class="col-12">
@@ -141,7 +141,7 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-12 my-5">
-                    <h2 class="mb-4">Unsere Angebote im Überblick</h2>
+                    <h2>Unsere Angebote im Überblick</h2>
                 </div>
             </div>
         </div>
@@ -227,7 +227,7 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-12 my-5">
-                    <h2 class="mb-4">Über uns</h2>
+                    <h2>Über uns</h2>
                 </div>
             </div>
         </div>
@@ -267,7 +267,7 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-12 my-5">
-                    <h2 class="mb-4">Ihre Vorteile auf einen Blick</h2>
+                    <h2>Ihre Vorteile auf einen Blick</h2>
                 </div>
             </div>
             <div class="row">
@@ -312,8 +312,8 @@
     <section id="praxis">
         <div class="container">
             <div class="row my-5">
-                <div class="col-12">
-                    <h2 class="mb-4">Einblick in die Räume</h2>
+                <div class="col-12 my-5">
+                    <h2>Einblick in die Räume</h2>
                 </div>
             </div>
             <div class="row mb-5">
@@ -376,70 +376,70 @@
     </section>
 
     <section id="faq">
-        <div class="container my-5">
-            <div class="row py-5">
-                <div class="col-12">
+        <div class="container ">
+            <div class="row my-5">
+                <div class="col-12 my-5">
                     <h2>Häufige Fragen</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-8 offset-lg-2">
-                    <div id="accordion" class="accordion accordion-flush mt-5">
+                    <div id="accordion" class="accordion accordion-flush">
                         <div class="accordion-item">
-                            <h2 class="accordion-header my-0" id="headingOne">
-                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h2 class="accordion-header my-0" id="accordion-header-1">
+                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
                                     Frage 1
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion" style="">
+                            <div id="accordion-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-header-1" data-bs-parent="#accordion" style="">
                                 <div class="accordion-body px-0 py-4">
                                     <p class="mb-0">Antwort 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header my-0" id="headingTwo">
-                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="accordion-header my-0" id="accordion-header-2">
+                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
                                     Frage 2
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion" style="">
+                            <div id="accordion-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-header-2" data-bs-parent="#accordion" style="">
                                 <div class="accordion-body px-0 py-4">
                                     <p class="mb-0">Antwort 2</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header my-0" id="headingThree">
-                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="accordion-header my-0" id="accordion-header-3">
+                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
                                     Frage 3
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                            <div id="accordion-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-header-3" data-bs-parent="#accordion">
                                 <div class="accordion-body px-0 py-4">
                                     <p class="mb-0">Antwort 3</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header my-0" id="headingFour">
-                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h2 class="accordion-header my-0" id="accordion-header-4">
+                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-4" aria-expanded="false" aria-controls="accordion-collapse-4">
                                     Frage 4
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                            <div id="accordion-collapse-4" class="accordion-collapse collapse" aria-labelledby="accordion-header-4" data-bs-parent="#accordion">
                                 <div class="accordion-body px-0 py-4">
                                     <p class="mb-0">Antwort 4</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header my-0" id="headingFive">
-                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h2 class="accordion-header my-0" id="accordion-header-5">
+                                <button class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-5" aria-expanded="false" aria-controls="accordion-collapse-5">
                                     Frage 5
                                 </button>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                            <div id="accordion-collapse-5" class="accordion-collapse collapse" aria-labelledby="accordion-header-5" data-bs-parent="#accordion">
                                 <div class="accordion-body px-0 py-4">
                                     <p class="mb-0">Antwort 5</p>
                                 </div>
@@ -452,9 +452,11 @@
     </section>
 
     <section id="kontakt">
-        <div class="container my-5">
+        <div class="container ">
             <div class="row my-5">
-                <h2 class="mb-4">Kontakt</h2>
+                <div class="col-12 my-5">
+                    <h2>Kontakt</h2>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center mb-5">
@@ -547,26 +549,21 @@
     </div>
 </footer>
 
-<div id="ruhm-modal" class="modal modal-lg fade hidden" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+<div id="karriere-modal" class="modal fade hidden" tabindex="-1">
+    <div class="modal-dialog">
         <div class="modal-content rounded-0">
-            <div class="modal-header border-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="overlay-1">
+                <div>Wir suchen<br>Verstärkung</div>
             </div>
-            <div class="overlay">
-                <div>Wichtige info</div>
+            <div class="overlay-2">
+                Bewirb dich jetzt!
             </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 pt-5 content">
-                            <p>
-                                <strong>Liebe Patienten von Frau Dr. Ruhm,</strong><br />
-                                wir führen Ihre Behandlung gerne in unserer Praxis fort. Bitte melden Sie sich einfach bei uns.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-body p-0">
+                <img src="assets/images/brandt_popup_xs.jpg" srcset="assets/images/brandt_popup_xs.jpg 750w, assets/images/brandt_popup_sm.jpg 1095w" class="d-block w-100" alt="Popup">
+            </div>
+            <div class="modal-footer justify-content-center">
+                <a href="karriere.html" class="btn btn-outline-secondary btn-sm">Zu den Stellen</a>
             </div>
         </div>
     </div>
@@ -574,5 +571,20 @@
 
 <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        const date = new Date();
+        const endDate = new Date('2026-06-30');
+        if (date.getTime() < endDate.getTime()) {
+            if (!sessionStorage.getItem('karrier3eModalShown')) {
+                jQuery('#karriere-modal').modal('show');
+                sessionStorage.setItem('karriereModalShown', '1');
+            }
+        }
+
+        const spy = bootstrap.ScrollSpy.getOrCreateInstance(document.body);
+        spy.refresh();
+    });
+</script>
 </body>
 </html>
