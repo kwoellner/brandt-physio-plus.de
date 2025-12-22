@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 30 30">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st2 {
+        fill: #ffffff;
+      }
+
+      .st1 {
+        stroke: #ffffff;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Gruppe_6159">
+    <path id="Pfad_3623" class="st2" d="M16.578125,9.1499939l-1.008,1.008,4.0500003,4.0139998v.1080003h-10.6200004v1.4219999h10.6200001v.1079998l-4.0500002,4.0319996,1.0080001,1.0080004,5.2740002-5.2919998v-1.1339998l-5.2740002-5.2740002Z"/>
+    <g id="Ellipse_574">
+      <circle class="st0" cx="15" cy="15" r="15"/>
+      <circle class="st1" cx="15" cy="15" r="14.25"/>
+    </g>
+  </g>
+</svg>

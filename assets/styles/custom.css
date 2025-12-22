@@ -195,14 +195,15 @@ h1 {
 h1 span {
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 h2 {
     position: relative;
     font-size: 35px;
-    line-height: 60px;
+    font-weight: normal;
+    line-height: 70px;
     text-align: center;
 }
 
@@ -216,6 +217,19 @@ h2::before {
     content: "";
 }
 
+h3 {
+    font-weight: normal;
+}
+
+em {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.btn {
+    width: max-content !important;
+}
+
 .btn-primary {
     height: 45px;
     font-size: 16px;
@@ -224,9 +238,9 @@ h2::before {
     padding: 8px 20px;
     background-color: #5ebf48;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .btn-primary:hover {
@@ -254,34 +268,34 @@ h2::before {
     color: #5ebf48;
 }
 
-.icon-wrapper {
+nav .icon-wrapper {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
-.icon-wrapper img {
+nav .icon-wrapper img {
     position: absolute;
     inset: 0;
 }
 
-.icon-hover {
+nav .icon-hover {
     opacity: 0;
 }
 
-.icon-swap:hover .icon-hover {
+nav .icon-swap:hover .icon-hover {
     opacity: 1;
 }
 
-.icon-swap:hover .icon-default {
+nav .icon-swap:hover .icon-default {
     opacity: 0;
 }
 
 @media (min-width: 992px) {
-    .icon-wrapper {
+    nav .icon-wrapper {
         position: relative;
-        width: 15px;
-        height: 15px;
+        width: 16px;
+        height: 16px;
     }
 }
 
@@ -302,6 +316,16 @@ h2::before {
 
     .left-aligned {
         padding-left: calc((100vw - 1140px)/2 + 0.75rem);
+    }
+
+    nav .icon-wrapper {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav .icon-wrapper img {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -440,7 +464,8 @@ nav .offcanvas .nav-link.icon-swap {
 
 @media only screen and (min-width: 992px) {
     nav .navbar-brand img {
-        height: 40px;
+        width: 222px;
+        height: 30px;
     }
 
     nav .nav-link {
@@ -452,13 +477,13 @@ nav .offcanvas .nav-link.icon-swap {
         position: relative;
         display: inline-block;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: normal;
         text-decoration: none;
     }
 
     .navbar-expand-lg .offcanvas .nav-link {
-        margin-left: 1.25rem;
-        padding: 0.25rem 0 0.25rem 0.75rem;
+        margin-left: 1.5rem;
+        padding: 0.25rem 0 0.25rem 0.5rem;
     }
 
     nav .offcanvas .nav-link:after {
@@ -477,6 +502,13 @@ nav .offcanvas .nav-link.icon-swap {
     nav .offcanvas .nav-link:hover::after,
     nav .offcanvas .nav-link:focus-visible::after {
         transform: scaleX(1);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav .nav-link {
+        font-size: 20px;
+        font-weight: normal;
     }
 }
 
@@ -549,9 +581,9 @@ nav .offcanvas .nav-link.icon-swap {
 
 .alert-primary img {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 50%;
-    margin-left: -20px;
+    margin-left: -30px;
 }
 
 /* Angebote */
@@ -567,20 +599,47 @@ nav .offcanvas .nav-link.icon-swap {
 }
 
 #angebote a.arrow-hover img {
+    transform: translateX(-20px);
     transition: transform .2s ease;
 }
 
 #angebote a.arrow-hover:hover img,
 #angebote a.arrow-hover:focus-visible img {
-    transform: translateX(-20px);
+    transform: translateX(0);
 }
 
 /* Über uns */
+#ueberuns .fs-4 {
+    font-size: 25px !important;
+    line-height: 35px !important;
+}
+
+@media only screen and (min-width: 992px) {
+    #ueberuns .fs-4 {
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #ueberuns .fs-4 {
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #ueberuns .fs-4 {
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+}
+
 #ueberuns a {
     color: #323c3c;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -594,6 +653,7 @@ nav .offcanvas .nav-link.icon-swap {
 #ueberuns a:focus-visible span {
     transform: translateX(20px);
 }
+
 
 /* FAQ */
 #faq .accordion-item {
@@ -641,7 +701,15 @@ nav .offcanvas .nav-link.icon-swap {
 }
 
 #faq .accordion-button {
+    font-size: 25px;
+    font-weight: normal;
     padding-left: 0;
+    padding-right: 0;
+}
+
+.faq .accordion-body {
+    font-size: 18px;
+    line-height: 28px;
 }
 
 /* Kontakt */
@@ -651,7 +719,26 @@ nav .offcanvas .nav-link.icon-swap {
 }
 
 #kontakt a.text-uppercase {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+}
+
+#kontakt a.text-uppercase {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#kontakt a.text-uppercase span {
+    display: inline-block;
+    transition: transform .2s ease;
+}
+
+#kontakt a.text-uppercase:hover span,
+#kontakt a.text-uppercase:focus-visible span {
+    transform: translateX(20px);
 }
 
 #kontakt .fs-5 {
@@ -684,7 +771,7 @@ footer a:focus {
     font-weight: 500;
     text-decoration: none !important;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 992px) {
