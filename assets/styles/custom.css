@@ -329,6 +329,30 @@ em {
     color: #5ebf48;
 }
 
+.list-check {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-check li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: .75rem;
+}
+
+.list-check li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .25em;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("../images/icon_check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 nav .icon-wrapper {
     position: relative;
     width: 16px;
