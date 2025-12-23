@@ -237,6 +237,26 @@ h5 {
     font-weight: 700;
 }
 
+
+a.link-arrow {
+    color: #323c3c;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.link-arrow span {
+    display: inline-block;
+    transition: transform .2s ease;
+}
+
+a.link-arrow:hover span,
+a.link-arrow:focus-visible span {
+    transform: translateX(20px);
+}
+
 em {
     font-weight: 600;
     font-style: normal;
@@ -751,25 +771,6 @@ nav .offcanvas .nav-link.icon-swap {
         font-size: 25px !important;
         line-height: 35px !important;
     }
-}
-
-#ueberuns a {
-    color: #323c3c;
-    font-size: 15px;
-    line-height: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-#ueberuns a span {
-    display: inline-block;
-    transition: transform .2s ease;
-}
-
-#ueberuns a:hover span,
-#ueberuns a:focus-visible span {
-    transform: translateX(20px);
 }
 
 /* Kontakt */
