@@ -284,6 +284,23 @@ em {
     color: #ffffff;
 }
 
+.bg-logo {
+    background-image: url("../images/brandt_physio_plus_logomark_grau.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain
+}
+
+@media (min-width: 992px) {
+    .bg-logo {
+        background-image: none;
+    }
+}
+
+.bg-green {
+    background-color: #ebf7e4;
+}
+
 .list-colored {
     padding-left: 1rem;
 }
