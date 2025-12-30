@@ -176,6 +176,18 @@ body {
     color: #323c3c;
 }
 
+html,
+body {
+    hyphens: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    html,
+    body {
+        hyphens: none;
+    }
+}
+
 body {
     padding-top: 60px;
     height: 100vh;
@@ -197,9 +209,9 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: normal;
-    line-height: 55px;
+    line-height: 45px;
 }
 
 h1 span {
@@ -211,15 +223,16 @@ h1 span {
 
 h2 {
     position: relative;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: normal;
-    line-height: 70px;
+    line-height: 38px;
     text-align: center;
 }
 
 h2::before {
     position: absolute;
     margin-left: -50px;
+    top: -10px;
     left: 50%;
     width: 100px;
     height: 4px;
@@ -233,14 +246,27 @@ h3 {
 
 h5 {
     font-size: 18px;
+    font-weight: 500;
     line-height: 28px;
-    font-weight: 700;
 }
 
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 55px;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
 
 a.link-arrow {
     color: #323c3c;
     font-size: 15px;
+    font-weight: 500;
     line-height: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -259,6 +285,11 @@ a.link-arrow:focus-visible span {
 
 em {
     font-weight: 600;
+    font-style: normal;
+}
+
+strong {
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -368,6 +399,7 @@ nav .icon-hover {
     opacity: 0;
 }
 
+nav .icon-swap.active .icon-hover,
 nav .icon-swap:hover .icon-hover {
     opacity: 1;
 }
@@ -543,15 +575,15 @@ nav .icon-swap:hover .icon-default {
 }
 
 .accordion-button {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: normal;
-    padding-left: 0;
-    padding-right: 0;
+    line-height: 26px;
+    padding: 10px 0 !important;
 }
 
 .accordion-body {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 26px;
 }
 
 .accordion-body ul {
@@ -572,6 +604,18 @@ nav .icon-swap:hover .icon-default {
 
 .accordion-flush.accordion-light>.accordion-item:last-child {
     border-bottom: none;
+}
+
+.accordion-body .fs-6 {
+    font-size: 15px !important;
+    line-height: 25px;
+}
+
+@media (min-width: 992px) {
+    .accordion-button {
+        font-size: 25px;
+        line-height: 35px;
+    }
 }
 
 /* Navigation */
@@ -622,6 +666,10 @@ nav .offcanvas .nav-link.icon-swap {
     font-weight: 400;
 }
 
+nav .offcanvas .btn {
+    width: 100% !important;
+}
+
 @media only screen and (min-width: 992px) {
     nav .navbar-brand img {
         width: 222px;
@@ -643,7 +691,7 @@ nav .offcanvas .nav-link.icon-swap {
 
     .navbar-expand-lg .offcanvas .nav-link {
         margin-left: 1.5rem;
-        padding: 0.25rem 0 0.25rem 0.5rem;
+        padding: 0.25rem 0 0.25rem 0;
     }
 
     nav .offcanvas .nav-link:after {
@@ -721,9 +769,16 @@ nav .offcanvas .nav-link.icon-swap {
     line-height: 40px;
 }
 
+@media only screen and (min-width: 992px) {
+    #intro p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
 /* News */
 #news .alert {
-    padding: 50px;
+    padding: 50px 1rem !important;
 }
 
 #news .alert-primary {
@@ -746,6 +801,12 @@ nav .offcanvas .nav-link.icon-swap {
     top: -30px;
     left: 50%;
     margin-left: -30px;
+}
+
+@media only screen and (min-width: 992px) {
+    #news .alert {
+        padding: 50px !important;
+    }
 }
 
 /* Angebote */
@@ -816,7 +877,7 @@ nav .offcanvas .nav-link.icon-swap {
 #kontakt .nav-link,
 #kontakt .nav-link.active {
     position: relative;
-    padding: 0 0 14px 20px;
+    padding: 0 0 14px 0;
     border: none;
 }
 
@@ -853,6 +914,7 @@ nav .offcanvas .nav-link.icon-swap {
 #kontakt a.text-uppercase {
     color: #ffffff;
     font-size: 15px;
+    font-weight: 500;
     line-height: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -878,13 +940,34 @@ nav .offcanvas .nav-link.icon-swap {
     line-height: 30px !important;
 }
 
+#kontakt .lh-35 {
+    display: inline-block;
+    line-height: 35px !important;
+}
+
+#kontakt .outro {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+    #kontakt .outro {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
 /* Popup */
+#karriere-modal .modal-dialog {
+   margin-top: 3rem;
+}
+
 #karriere-modal button.btn-close {
     position: absolute;
     width: 30px;
     height: 30px;
-    top: -15px;
-    right: -15px;
+    top: 10px;
+    right: 10px;
     padding: 0;
     border: none;
     background-image: url('../images/icon_close.svg');
@@ -906,11 +989,11 @@ nav .offcanvas .nav-link.icon-swap {
 
 #karriere-modal .modal-content .overlay-2 {
     position: absolute;
-    top: 260px;
+    top: 262px;
     padding: 10px 15px;
     font-size: 16px;
     line-height: 24px;
-    background-color: #707070;
+    background-color: #434f4f;
     border-radius: 0 0 20px 0;
     color: #ffffff;
     z-index: 1;
