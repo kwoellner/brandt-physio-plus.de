@@ -263,19 +263,6 @@ h5 {
     }
 }
 
-a {
-    color: #323c3c;
-    text-decoration: none;
-}
-
-a:active,
-a:hover,
-a:focus {
-    color: #5ebf48;
-    text-decoration: underline;
-}
-
-
 a.link-arrow {
     color: #323c3c;
     font-size: 15px;
@@ -312,6 +299,15 @@ strong {
 
 .border-top {
     border-color: #a1a7a7 !important;
+}
+
+.link-underline {
+    color: #323c3c;
+    text-decoration-color: rgba(94, 191, 72, 0) !important;
+}
+
+.link-underline:hover {
+    text-decoration-color: rgba(94, 191, 72, 1) !important;
 }
 
 .btn {
