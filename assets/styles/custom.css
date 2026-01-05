@@ -263,6 +263,19 @@ h5 {
     }
 }
 
+a {
+    color: #323c3c;
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+    color: #5ebf48;
+    text-decoration: underline;
+}
+
+
 a.link-arrow {
     color: #323c3c;
     font-size: 15px;
@@ -291,6 +304,14 @@ em {
 strong {
     font-weight: 700;
     font-style: normal;
+}
+
+.table {
+    border-color: #a1a7a7;
+}
+
+.border-top {
+    border-color: #a1a7a7 !important;
 }
 
 .btn {
@@ -860,9 +881,9 @@ nav .offcanvas .btn {
 
 /* Kontakt */
 #kontakt .nav-link {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: normal;
-    line-height: 40px;
+    line-height: 38px;
     color: inherit;
 }
 
@@ -900,7 +921,6 @@ nav .offcanvas .btn {
     transform-origin: left center;
     transition: transform 0.2s;
 }
-
 
 #kontakt a {
     color: #ffffff;
@@ -951,6 +971,11 @@ nav .offcanvas .btn {
 }
 
 @media only screen and (min-width: 992px) {
+    #kontakt .nav-link {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
     #kontakt .outro {
         font-size: 25px;
         line-height: 40px;
